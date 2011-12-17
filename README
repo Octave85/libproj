@@ -1,0 +1,12 @@
+libproj is a framework to bootstrap commandline development and get programs
+up and running quickly.
+
+Outline of functions:
+
+lpopts - option processing, command interface
+
+Use is outlined in /main.c. It's pretty simple to use.
+
+The build.sh script helps with compilation.
+It is invoked as such: ./build.sh execname sourcename, where execname is the
+name of the output file and sourcename is the name of the C source file
