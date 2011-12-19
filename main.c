@@ -20,15 +20,11 @@ int hello(int argc, char **argv)
   *   
   */
 
-  next_option(argc, argv, &opts); // Get first option, puts option data in struct opts
-
-  printf("Hello! %d\n", argc);
-
-  printf("%c\n", opts.opt);
-
-  next_option(argc, argv, &opts);
-
-  printf("%s, %s\n", opts.string, opts.arg);
+  while (next_option(argc, argv, &opts) != OPT_DONE)
+    {
+      printf("Opt: %c Arg: %s\n", opts.opt, opts.arg);
+    }
+  printf("After opts: %s\n", argv[optind]);
 
   return 0;
 }

@@ -4,9 +4,6 @@ up and running quickly.
 Outline of functions:
 
 lpopts - option processing, command interface
+init - stores general information about the application that is used throughout the framework
 
-Use is outlined in /main.c. It's pretty simple to use.
-
-The build.sh script helps with compilation.
-It is invoked as such: ./build.sh execname sourcename, where execname is the
-name of the output file and sourcename is the name of the C source file
+libproj can be install by navigating to the directory 
