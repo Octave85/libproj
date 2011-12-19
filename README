@@ -6,4 +6,17 @@ Outline of functions:
 lpopts - option processing, command interface
 init - stores general information about the application that is used throughout the framework
 
-libproj can be install by navigating to the directory 
+libproj can be installed by navigating to the directory where it has been downloaded:
+$ cd path/to/directory/
+
+and then unpacking the tarball:
+
+$ gunzip libproj-0.1.tar.gz; tar -xf libproj-0.1.tar
+
+and finally, these three commands:
+
+$ ./configure; make; sudo make install
+
+There are many options to the configure script, but the default ones should be okay for most distributions.
+You can specify a prefix for installation with ./configure --prefix=/path/prefix
+
